@@ -50,7 +50,6 @@ const Hero = () => {
                   alt="Premium Quality"
                   width={128}
                   height={128}
-                  className="object-contain"
                 />
               </div>
               <h3 className="text-2xl font-bold mb-2">Premium Quality</h3>
@@ -58,14 +57,13 @@ const Hero = () => {
             </div>
 
             {/* Eco-Friendly */}
-            <div className="p-6 bg-white rounded-lg shadow-lg">
+            <div className="bg-white shadow-lg rounded-lg p-6 text-center">
               <div className="w-full h-32 flex justify-center items-center">
                 <Image
                   src="/12.png"
                   alt="Eco-Friendly Materials"
                   width={128}
                   height={128}
-                  className="object-contain"
                 />
               </div>
               <h3 className="text-2xl font-bold mb-2">Eco-Friendly Materials</h3>
@@ -73,14 +71,13 @@ const Hero = () => {
             </div>
 
             {/* Innovative Designs */}
-            <div className="p-6 bg-white rounded-lg shadow-lg">
+            <div className="bg-white shadow-lg rounded-lg p-6 text-center">
               <div className="w-full h-32 flex justify-center items-center">
                 <Image
                   src="/13.png"
                   alt="Innovative Designs"
                   width={128}
                   height={128}
-                  className="object-contain"
                 />
               </div>
               <h3 className="text-2xl font-bold mb-2">Innovative Designs</h3>
@@ -92,13 +89,13 @@ const Hero = () => {
 
       {/* Blue Section */}
       <div className="bg-blue-500 text-white py-16 px-6 md:px-20 text-center relative">
-        <Image
-          src="/b.png" // Update with your image path
-          alt="Your Alt Text"
-          layout="fill" // Fills the parent container
-          objectFit="cover" // Maintains the aspect ratio while covering the container
-          className="opacity-30" // Adjust opacity as needed
-        />
+      <Image
+  src="/b.png"
+  alt="Example image"
+  height={100}
+  width={500}
+  style={{ objectFit: "cover" }} // Use style prop instead
+/>
         <h2 className="text-3xl md:text-5xl font-bold mb-4 relative z-10">
           Ready to Elevate Your Style?
         </h2>
