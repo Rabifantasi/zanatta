@@ -46,7 +46,7 @@ const Hero = () => {
             <div className="p-6 bg-white rounded-lg shadow-lg">
               <div className="w-full h-32 flex justify-center items-center">
                 <Image
-                  src="/11.png"
+                  src="/premiumquality.png"
                   alt="Premium Quality"
                   width={128}
                   height={128}
@@ -60,7 +60,7 @@ const Hero = () => {
             <div className="bg-white shadow-lg rounded-lg p-6 text-center">
               <div className="w-full h-32 flex justify-center items-center">
                 <Image
-                  src="/12.png"
+                  src="/sustainability.png"
                   alt="Eco-Friendly Materials"
                   width={128}
                   height={128}
@@ -74,7 +74,7 @@ const Hero = () => {
             <div className="bg-white shadow-lg rounded-lg p-6 text-center">
               <div className="w-full h-32 flex justify-center items-center">
                 <Image
-                  src="/13.png"
+                  src="/innovation.png"
                   alt="Innovative Designs"
                   width={128}
                   height={128}
@@ -88,24 +88,61 @@ const Hero = () => {
       </section>
 
       {/* Blue Section */}
-      <div className="bg-blue-500 text-white py-16 px-6 md:px-20 text-center relative">
-      <Image
-  src="/b.png"
-  alt="Example image"
-  height={100}
-  width={500}
-  style={{ objectFit: "cover" }} // Use style prop instead
-/>
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 relative z-10">
-          Ready to Elevate Your Style?
-        </h2>
-        <p className="text-lg md:text-2xl mb-6 relative z-10">
-          Explore our collections and find what suits you best.
-        </p>
-        <button className="bg-white text-blue-500 py-3 px-6 rounded-lg hover:bg-gray-100 text-lg relative z-10">
-          Start Shopping
-        </button>
-      </div>
+      <div
+  style={{
+    position: "relative",
+    width: "100%",
+    height: "300px",
+    background: "blue",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    overflow: "hidden",
+  }}
+>
+  {/* Background Image */}
+  <Image
+    src="/power.png"
+    alt="Example image"
+    fill
+    style={{ objectFit: "cover", zIndex: 1 }} // Image as background
+  />
+
+  {/* Overlay */}
+  <div
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: "rgba(0, 0, 0, 0.5)", // Black overlay with 50% opacity
+      zIndex: 2,
+    }}
+  ></div>
+
+  {/* Text Content */}
+  <div
+    style={{
+      position: "absolute",
+      zIndex: 3, // Above the overlay
+      color: "white",
+      textAlign: "center",
+    }}
+  >
+    <h2 className="text-3xl md:text-5xl font-bold mb-4">
+      Ready to Elevate Your Style?
+    </h2>
+    <p className="text-lg md:text-2xl mb-6">
+      Explore our collections and find what suits you best.
+    </p>
+    <button className="bg-white text-blue-500 py-3 px-6 rounded-lg hover:bg-gray-100 text-lg">
+      Start Shopping
+    </button>
+  </div>
+</div>
+
+      
 
       {/* Testimonials Section */}
       <div className="py-16 px-6 md:px-20 bg-gray-100">
