@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section className="relative">
       {/* Hero Main Banner */}
-      <div className="relative h-screen flex flex-col justify-center items-center text-white overflow-hidden">
+      <div className="relative h-screen flex flex-col justify-center items-center text-white overflow-hidden bg-black">
         <video
           className="absolute inset-0 w-full h-full object-contain" // Change object-cover to object-contain
           autoPlay
