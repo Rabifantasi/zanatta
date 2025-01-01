@@ -4,9 +4,9 @@ const Hero = () => {
   return (
     <section className="relative">
       {/* Hero Main Banner */}
-      <div className="relative h-[90vh] flex flex-col justify-center items-center text-white overflow-hidden">
+      <div className="relative h-screen flex flex-col justify-center items-center text-white overflow-hidden">
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-contain" // Change object-cover to object-contain
           autoPlay
           loop
           muted
@@ -95,31 +95,31 @@ const Hero = () => {
 
       {/* Blue Section */}
       <div className="relative w-full h-[300px] flex justify-center items-center overflow-hidden">
-  {/* Background Image */}
-  <Image
-    src="/power.png"
-    alt="Example image"
-    fill
-    className="object-cover brightness-75" // Adjust brightness for a duller effect
-    style={{ filter: 'blur(4px)' }} // Adding a blur effect to make it less sharp
-  />
+        {/* Background Image */}
+        <Image
+          src="/power.png"
+          alt="Example image"
+          fill
+          className="object-cover brightness-75" // Adjust brightness for a duller effect
+          style={{ filter: 'blur(4px)' }} // Adding a blur effect to make it less sharp
+        />
 
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black opacity-50" /> {/* Dark overlay to further dim the image */}
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black opacity-50" /> {/* Dark overlay to further dim the image */}
 
-  {/* Text Content */}
-  <div className="absolute z-10 text-center text-white">
-    <h2 className="text-3xl md:text-5xl font-bold mb-4">
-      Ready to Elevate Your Style?
-    </h2>
-    <p className="text-lg md:text-2xl mb-6">
-      Explore our collections and find what suits you best.
-    </p>
-    <button className="bg-white text-blue-600 py-3 px-6 rounded-lg hover:bg-gray-100 text-lg transition duration-300">
-      Start Shopping
-    </button>
-  </div>
-</div>
+        {/* Text Content */}
+        <div className="absolute z-10 text-center text-white">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">
+            Ready to Elevate Your Style?
+          </h2>
+          <p className="text-lg md:text-2xl mb-6">
+            Explore our collections and find what suits you best.
+          </p>
+          <button className="bg-white text-blue-600 py-3 px-6 rounded-lg hover:bg-gray-100 text-lg transition duration-300">
+            Start Shopping
+          </button>
+        </div>
+      </div>
 
       {/* Testimonials Section */}
       <div className="py-16 px-6 md:px-20 bg-gray-100">
